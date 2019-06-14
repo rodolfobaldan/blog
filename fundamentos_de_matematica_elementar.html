@@ -1,0 +1,203 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+    <title>Fundamentos de Matemática Elementar</title>
+     <!-- Aqui chamamos o nosso arquivo css externo -->
+    <link rel="icon" type="imagem/ico" href="img/favicon.ico">
+    <link rel="stylesheet" type="text/css"  href="css/estilo.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- SmartMenus core CSS (required) -->
+    <link href="css/sm-core-css.css" rel="stylesheet" type="text/css" />
+
+    <!-- "sm-blue" menu theme (optional, you can use your own CSS, too) -->
+    <link href="css/sm-blue/sm-blue.css" rel="stylesheet" type="text/css" />
+    
+</head>
+<body>
+  
+    <header>
+      <a href="index.html"><img alt="Logo" class="logotipo" src="img/impersystem1.png"/></a>
+    </header>
+    <!-- Menu -->
+    <nav class="main-nav" role="navigation">
+
+      <!-- Mobile menu toggle button (hamburger/x icon) -->
+      <input id="main-menu-state" type="checkbox" />
+      <label class="main-menu-btn" for="main-menu-state">
+        <span class="main-menu-btn-icon"></span> Toggle main menu visibility
+      </label>
+
+      <h2 class="nav-brand"><a href="index.html">Impersystem</a></h2>
+      <ul id="main-menu" class="sm sm-blue">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">Diciplinas</a>
+          <ul>
+            <li><a href="algoritimo.html">Algoritmos e Lógica de Programação</a></li>
+            <li><a href="bases_da_internet.html">Bases da Internet</a></li>
+            <li><a href="criacao_de_conteudo_na_web.html">Criação de Conteúdo na Web</a></li>
+            <li><a href="#">Design Digital</a>
+              <ul>
+                <li><a href="">About Vadikom</a></li>
+                <li><a href="">Projects</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">Privacy policy</a></li>
+              </ul>
+            </li>
+            <li><a href="fundamentos_de_matematica_elementar.html">Fundamentos de Matemática Elementar</a></li>  
+            <li><a href="ingles.html">Inglês</a></li> 
+            <li><a href="leitura_e_producao_de_textos.html">Leitura e Produção de Textos</a></li> 
+            <li><a href="padroes_de_projeto_de_sitios_internet_1.html">Padrões de Projeto de Sítios Internet I</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Faculdade</a>
+          <ul>
+            <li><a href="professores.html">Professores</a></li>
+            <li><a href="escola.html">Fatec</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Suporte</a>
+          <ul>
+            <li><a href="#" class="disabled">Para ter acesso. PAGE O SITEF!!!</a></li>
+          </ul>
+        </li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="#">Sobre o Site</a>
+          <ul>
+            <li>
+              <!-- Mega menu -->
+              <div class="mega-menu">
+                <div>
+                  <p>This is a mega drop down test. Just set the "mega-menu" class to the parent UL element to inform the SmartMenus script. It can contain <strong>any HTML</strong>.</p>
+                  <p>Just style the contents as you like (you may need to reset some SmartMenus inherited styles - e.g. for lists, links, etc.)</p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+
+    <dd class="title">Fundamentos de Matemática Elementar</dd>
+
+    <section class="conteudo_diciplina">
+      <h1>Teoria dos Conjuntos</h1>
+        <p>Chamamos de conjunto toda e qualquer coleção de elementos. Estes elementos podem ser números, objetos, figuras, pessoas, animais e tudo o que podemos ordenar, catalogar ou reunir em grupos de seus elementos. Por exemplo: Se quisermos construir o conjunto de crianças de uma escola que possuam exatos 10 anos de idade, podemos dizer que o conjunto é composto pelos alunos Pedrinho, Joãozinho, Mariazinha, ..., e todos os alunos que tenham 10 anos de idade na escola. Matematicamente, quase sempre os conjuntos serão compostos por números e que dependam de algumas condições. Por exemplo: O conjunto dos números Reais, o conjunto dos números Inteiros, o conjunto dos números maiores do que 2 e menores do que 7, e muito mais.</p>
+
+        <p>A relação básica entre um conjunto e o elemento que o compõe é chamada de relação de pertinência, ou seja, definimos um conjunto quando existe uma regra que permite decidir se um elemento pertence ou não a ele. Se um elemento x pertence a um conjunto (ou coleção) A, dizemos que x pertence a A. Formalmente escrevemos:</p>
+
+        <p><strong class="mat">x &isin; A</strong></p>
+
+        <p>E quando x não é um elemento deste conjunto, dizemos que x não pertence a A:</p>
+
+        <p><strong class="mat">x &notin; A</strong></p>
+
+        <p>A maioria dos conjuntos em matemática não possuem uma definição para todos os seus elementos, logo a forma mais fácil de definir um conjunto é utilizando uma propriedade comum para todos os seus elementos, ou seja, uma lei que consiga ser associada a todos os elementos que o compõe. Vejamos abaixo alguns conjuntos numéricos usuais:</p>
+        
+        <p>
+        <ul id="mat-ul">
+          <li>Números Naturais: ℕ={0,1,2,3,4,5,...}</li>
+          <li>Números Inteiros: ℤ={...,−4,−3,−2,−1,0,1,2,3,4,...}</li>
+          <li>Números Racionais: ℚ={p/q:p&isin;Z;q&isin;Z∗}</li>
+        </ul>
+        </p>
+
+        <p>Exemplo 1: Vamos definir um conjunto A que seja construído a partir dos números Naturais e que qualquer elemento de A seja maior ou igual a 5 e menor ou igual a 10. Então o conjunto será:</p>
+        
+        <p><strong class="mat">A={5,6,7,8,9,10}</strong></p>
+
+        <p>Como sabemos que qualquer elemento x que pertence a A é um número Natural neste exemplo, podemos representar o conjunto da seguinte maneira:</p>
+
+        <p><strong class="mat">A={x&isin;ℕ:5&le;x&le;10}</strong></p>
+
+        <p>Lê-se: O conjunto A é igual a x (elemento qualquer de A) que pertence aos naturais, tal que 5 é menor ou igual a x e x é menor ou igual a 10 (ou x está entre 5 e 10).</p>
+        
+       <hr>
+
+      <h1>Conjunto vazio</h1>
+        
+        <p>Existem alguns conjuntos que são representados por uma propriedade onde não é possível gerar elementos. Vejamos um caso:</p>
+
+        <p><strong class="mat">A={x&isin;ℕ:1&lt;x&lt;2}</strong></p>
+
+        <p>Note que qualquer elemento de A pertence ao conjunto dos naturais, porém é um absurdo dizer que nos naturais existem números entre 1 e 2, ou seja, em ℕ não existe o número 1,5, por exemplo. Então, neste caso, dizemos que o conjunto A é vazio. E será representado por:</p>
+
+        <p><strong class="mat">A=&empty;</strong></p>
+
+        <p><strong>Atenção! O conceito de conjunto vazio remete a não existência de elementos, e não que o seu elemento é zero.</strong></p>
+        
+        <hr>
+
+        <h1>Subconjuntos</h1>
+
+        <p>Note que no exemplo 1, os elementos do conjunto A estão contidos nos números Naturais, dizemos então que o conjunto A é um Subconjunto dos números Naturais, ou seja, o conjunto A está contido no conjunto ℕ. Escrevemos então:</p>
+
+        <p><strong class="mat">A &sub; ℕ</strong></p>
+
+        <p>Exemplo 2: Basicamente, um subconjunto é um conjunto que possui elementos de outro. Como no exemplo da introdução, tomando o conjunto de crianças de 10 anos de idade em uma escola (chamaremos de A), e selecionando apenas os meninos (chamaremos de B), podemos dizer que o conjunto de meninos com 10 anos de idade é um subconjunto do conjunto das crianças. De uma maneira geral, dados dois conjuntos A e B, dizemos A é subconjunto de B quando todo elemento de A é também elemento de B. Sendo assim:</p>
+
+        <p><strong class="mat">A &sub; B</strong></p>
+
+        <p>Exemplo 3: Os conjuntos numéricos ℕ, ℤ e ℚ cumprem uma relação de inclusão, onde:</p>
+
+        <p><strong class="mat">ℕ &sub; ℤ &sub; ℚ</strong></p>
+
+        <p>Propriedades da inclusão:</p>
+        
+        <p>
+        <ul id="mat-ul">
+          <li>A &sub; A (A sempre está contido em A);</li>
+          <li>Se A &sub; B e se B &sub; A então A = B ;</li>
+          <li>Se A &sub; B e se B &sub; C então A &sub; C.</li>
+        </ul>
+        </p>
+
+        <hr>
+
+        <h1>Operações entre conjuntos</h1>
+        
+        <p><strong>União de conjuntos:</strong> A união (ou reunião) de conjuntos é a junção dos elementos de um conjunto A mais ou elementos de um conjunto B. Podemos afirmar então que se um elemento x pertencer a união de A com B, então x pertence a A ou pertence a B. Formalmente definimos:</p>        
+        
+        <p><strong class="mat">A &cup; B={x:x &isin; A ou x &isin; B}</strong></p>
+
+        <p>Veja abaixo uma representação no chamado diagrama de Venn. A região cinza simboliza a união dos seus respectivos elementos.</p>
+
+        <img class="img-mat" alt="imagem de um diagrama" id="imagem-matematica-diagramaVenn" title=" Diagrama de Venn" src="img/diciplinas/matematica/img_5b6df0fb9b6f1.png">
+        
+        <p><strong>Interseção de conjuntos:</strong> A interseção de conjuntos é formada pelos elementos que são comuns entre A e B. Então:</p>
+        
+        <p><strong class="mat">A &cap; B={x:x &isin; A e x &isin; B}</strong></p>
+
+        <img alt="imagem de um diagrama" id="imagem-matematica-diagrama" src="img/diciplinas/matematica/img_5b6df72018240.png">
+        
+      
+    </section>
+
+    
+
+
+  <footer class="footer2">
+      <p> Copyright &copy; Impersystem. Todos os direitos reservados. </p>
+      Página desenvolvida por <a tabindex="1" href="https://www.linkedin.com/in/rodolfo-baldan-140b8516a/" target="blank">Rodolfo Soares Baldan </a>
+    </footer>
+
+
+<!-- jQuery -->
+    <script type="text/javascript" src="jquery/jquery.js"></script>
+
+    <!-- SmartMenus jQuery plugin -->
+    <script type="text/javascript" src="jquery.smartmenus.js"></script>
+
+    <!-- SmartMenus jQuery init -->
+    <script type="text/javascript">
+      $(function() {
+        $('#main-menu').smartmenus({
+          subMenusSubOffsetX: 1,
+          subMenusSubOffsetY: -8
+        });
+      });
+    </script>
+
+</body>
+</html>

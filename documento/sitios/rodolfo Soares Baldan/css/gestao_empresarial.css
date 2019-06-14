@@ -1,0 +1,34 @@
+.corpogestao{
+    position: relative;
+    border: #ffffff solid 5px;
+    /*padding: 5px 5px 5px 5px;*//*Esse código é o mesmo da linha 37 só que não enchuto, e que não possa altera a background sem altera a borda*/
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 255, .2);
+    top: 30px;
+    left: 50%;
+    margin-left: -382.5px;
+    padding: 0px 5px 0px 5px;
+    height: 600px;
+    width: 765px;
+    background-color: white;
+    opacity: 0.65; 
+    
+}
+
+.texto{
+    text-align: justify;
+    font-color: black;
+    position: relative;
+    top: -600px;
+    left: 50%;
+    margin-left: -378.5px;
+    padding: 0px 5px 0px 5px;
+    height: 9px;
+    width: 765px;
+     
+}
+
+h1.titulo{
+    padding-top: 10px;
+
+}
+

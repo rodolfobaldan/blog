@@ -1,0 +1,478 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+    <title>Algorítimo</title>
+     <!-- Aqui chamamos o nosso arquivo css externo -->
+    <link rel="icon" type="imagem/ico" href="img/favicon.ico"/>
+    <link rel="stylesheet" type="text/css"  href="css/estilo.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- SmartMenus core CSS (required) -->
+    <link href="css/sm-core-css.css" rel="stylesheet" type="text/css" />
+
+    <!-- "sm-blue" menu theme (optional, you can use your own CSS, too) -->
+    <link href="css/sm-blue/sm-blue.css" rel="stylesheet" type="text/css" />
+    
+    
+</head>
+<body>
+
+  
+    <header>
+      <a href="index.html"><img alt="Logo" class="logotipo" src="img/impersystem1.png"/></a>
+    </header>
+    <!-- Menu -->
+
+    <nav class="main-nav" role="navigation">
+
+      <!-- Mobile menu toggle button (hamburger/x icon) -->
+      <input id="main-menu-state" type="checkbox" />
+      <label class="main-menu-btn" for="main-menu-state">
+        <span class="main-menu-btn-icon"></span> Toggle main menu visibility
+      </label>
+
+      <h2 class="nav-brand"><a href="index.html">Impersystem</a></h2>
+
+      <ul id="main-menu" class="sm sm-blue">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">Diciplinas</a>
+          <ul>
+            <li><a href="algoritimo.html">Algoritmos e Lógica de Programação</a></li>
+            <li><a href="bases_da_internet.html">Bases da Internet</a></li>
+            <li><a href="criacao_de_conteudo_na_web.html">Criação de Conteúdo na Web</a></li>
+            <li><a href="#">Design Digital</a>
+              <ul>
+                <li><a href="">About Vadikom</a></li>
+                <li><a href="">Projects</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">Privacy policy</a></li>
+              </ul>
+            </li>
+            <li><a href="fundamentos_de_matematica_elementar.html">Fundamentos de Matemática Elementar</a></li>  
+            <li><a href="ingles.html">Inglês</a></li> 
+            <li><a href="leitura_e_producao_de_textos.html">Leitura e Produção de Textos</a></li> 
+            <li><a href="padroes_de_projeto_de_sitios_internet_1.html">Padrões de Projeto de Sítios Internet I</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Faculdade</a>
+          <ul>
+            <li><a href="professores.html">Professores</a></li>
+            <li><a href="escola.html">Fatec</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Suporte</a>
+          <ul>
+            <li><a href="#" class="disabled">Para ter acesso. PAGE O SITEF!!!</a></li>
+          </ul>
+        </li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="#">Sobre o Site</a>
+          <ul>
+            <li>
+              <!-- Mega menu -->
+              <div class="mega-menu">
+                  <p>Olá sejá bem vindo ao meu site, agradeço po está aqui e vizualizando essa obra prima, sendo a a 1ª Maravilha do mundo kk.</p>
+                  <p>Bem meu site ele e simples, mas e cheio das frescuras como todos dizem, não critiquem meu site e só quero elogios, meu site teve algumas mudanças no html e no css, a agora ele tem jquery e javascript foi retirado.</p>
+              </div>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+
+    <dd class="title">Algoritmos e Lógica de Programação</dd>
+
+    <section class="conteudo_diciplina">
+      <h1>Conceito if/else</h1>
+      
+      <p>Chamamos de estruturas de decisão encadeadas, quando uma estrutura de decisão está localizada dentro do lado falso da outra. Este tipo de estrutura também é conhecida como seleção “aninhada” ou seleção “encaixada”.</p>
+      
+      <p>Qualquer que seja o termo usado para identificar a estrutura, o importante é que esse formato com uma estrutura de seleção dentro da outra permite fazer a escolha de apenas um entre vários comandos possíveis.</p>
+      
+      <p>Vejamos um exemplo em pseudocódigo.</p>
+
+      <p>Exemplo:</p>
+
+      <p>Receber os valores inteiros e verificar qual dos valores é o maior. Emitir uma mensagem caso o valores sejam iguais.</p>
+
+      <p>Algoritmo MaiorNumero;</p>
+      <pre>
+      
+      Var
+      int N1, N2 ;
+      
+      Inicio
+      Escreva("Digite o primeiro número: ");
+      Leia(N1);
+      
+      Escreva("Digite o segundo número: ");
+      Leia(N2);
+      
+      Se (N1 == N2) então
+        Escreva ("Os números são iguais”);
+      
+      Senão
+        Se (N1 > N2) então
+          Escreva("O maior valor é = ",N1);
+      Senão
+        Escreva("O maior valor é = ",N2);
+      Fim.
+      </pre>
+      <p>Em linguagem C podemos usar estruturas if – else -if encadeadas para construir o código equivalente.</p>
+      
+    <pre>
+  
+  #include <'stdio.h> // tire as aspas simples para funcionar
+  #include <'stdlib.h> // tire as aspas simples para funcionar
+    int main (void)
+  {
+  int N1, N2 ;
+  printf("Digite o primeiro numero: ");
+  scanf("%d", &N1);
+  
+  printf("Digite o segundo numero: ");
+  scanf("%d", &N2);
+  
+  if (N1 == N2)
+      printf("Os numeros sao iguais!");
+  
+  else if (N1 > N2)
+    printf("O maior valor e = %d", N1);
+  
+  else
+    printf("O maior valor e = %d", N2);
+  
+  printf("\n");
+  system("pause");
+  return (0);
+  }
+    </pre>
+
+    <p><strong>Tela de execução</strong></p>
+
+    <img alt="Imagem de execução" id="imagem-de-execucao-1-algoritimo" src="img/diciplinas/algoritimo/execucãoexemploestruturaif2.jpg">
+    
+    <hr>
+
+    <h1>Conceito switch case em C</h1>
+
+    <p>É uma forma de reduzir a complexidade de vários if … else encadeados.</p>
+
+    <p>É muito utilizado, principalmente para uso em estruturas de menu.</p>
+
+    <p>O conteúdo de uma variável é comparado com um valor constante, e caso a comparação seja verdadeira, um determinado comando é executado.</p>
+    
+    <p><strong>Pseudocódigo:</strong></p>
+
+    <p>Em português estruturado o comando escolha…caso equivale ao switch…case</p>
+
+    <p>Veja estrutura escolha … caso</p>
+
+    <pre>
+      
+      Escolha (Variável)
+  Inicio
+    Caso (Valor1): 
+        Instruções;
+   
+    Caso (Valor2): 
+      Instruções;
+   
+    Caso (ValorN): 
+      Instruções;
+  Fim;
+    </pre>
+
+    <p><strong>Sintaxe do comando switch case em linguagem C</strong></p>
+
+    <pre>
+      
+      switch (variável)
+  {
+  case constante1:
+     Instruções;
+  break;
+
+  case constante2:
+     Instruções;
+  break;
+
+  default
+     Instruções;
+  }
+    </pre>
+
+    <p>Utilização</p>
+
+    <p>Vamos construir um programa para verificar o dia da semana a fim de exemplificar a utilização do switch…case.</p>
+
+    <p>O usuário vai digitar um número e o programa vai retornar o dia da semana equivalente ao número.</p>
+
+    <p>Exemplo:</p>
+
+    <pre>
+  
+  #include <'stdio.h> // tire as aspas simples para funcionar
+  #include <'conio.h> // tire as aspas simples para funcionar
+  int main (void )
+  {
+    int valor;
+  
+    printf ("Digite um valor de 1 a 7: ");
+    scanf("%d", &valor);
+  
+    switch ( valor )
+    {
+      case 1 :
+      printf ("Domingo\n");
+      break;
+    
+      case 2 :
+      printf ("Segunda\n");
+      break;
+    
+      case 3 :
+      printf ("Terça\n");
+      break;
+    
+      case 4 :
+      printf ("Quarta\n");
+      break;
+    
+      case 5 :
+      printf ("Quinta\n");
+      break;
+    
+      case 6 :
+      printf ("Sexta\n");
+      break;
+    
+      case 7 :
+      printf ("Sabado\n");
+      break;
+    
+      default :
+      printf ("Valor invalido!\n");
+    }
+  
+    getch();
+    return 0;
+  }
+    </pre>
+
+    <p><strong>Tela de execução</strong></p>
+
+    <img alt="Imagem de execução" id="imagem-de-execucao-2-algoritimo" src="img/diciplinas/algoritimo/telaexecucaocomandoswitch.jpg">
+
+    <p><strong>Explicação do código:</strong></p>
+
+    <p>A instrução break termina a execução do switch e o programa continua a executar na instrução seguinte.</p>
+
+    <p>O uso do break evita testar as demais alternativas de forma desnecessária quando uma opção verdadeira já foi encontrada.</p>
+
+    <p>O comando default exibe uma mensagem, caso nenhuma das alternativas anteriores seja verdadeira.
+    Agora veja, como ficaria o mesmo programa usando comandos if else aninhados (encadeados).</p>
+
+    <pre>
+  
+  #include <'stdio.h> // tire as aspas simples para funcionar
+  #include <'conio.h> // tire as aspas simples para funcionar
+  int main (void )
+  {
+    int valor;
+  
+    printf ("Digite um valor de 1 a 7: ");
+    scanf("%d", &valor);
+  
+    if (valor == 1)
+      printf ("Domingo\n");
+    else
+    if (valor == 2)
+      printf ("Segunda\n");
+    else
+    if (valor == 3)
+      printf ("Terça\n");
+    else
+    if (valor == 4)
+    printf ("Quarta\n");
+    else
+    if (valor == 5)
+      printf ("Quinta\n");
+    else
+    if (valor == 6)
+      printf ("Sexta\n");
+    else
+    if (valor == 7)
+      printf ("Sabado\n");
+    else
+      printf ("Valor invalido!\n");
+    
+    getch();
+    return 0;
+  }
+    </pre>
+
+    <p><strong>Importante:</strong></p>
+
+    <p>Não são aceitas expressões condicionais no comando switch…case, somente são aceitos valores constantes.</p>
+
+    <p>Esta é um diferença bem grande quando comparado ao comando if…else.</p>
+
+    <p>Portanto caso tenha que testar uma condição você terá que usar if…else ao invés do switch…case.</p>
+    
+    <hr>
+
+    <h1>Conceito While</h1>
+
+    <p>Esta instrução é usada quando não sabemos quantas vezes um determinado bloco de instruções precisa ser repetido. Com ele, a execução das instruções vai continuar até que uma condição seja verdadeira. A condição a ser analisada para a execução do laço de repetição deverá retornar um valor booleano.</p>
+
+    <p>Veja abaixo a sintaxe do while:</p>
+
+    <pre>
+  
+  while (teste condicional)
+ 
+    {
+ 
+        //comandos; > serão executados enquanto
+        o teste condicional for igual a verdadeiro (true)
+ 
+    }
+    </pre>
+
+    <p>Perceba que, somente se a condição for verdadeira o corpo do laço de repetição, com seus respectivos comandos, serão executados. Portanto, o conteúdo será repetido até que esta condição não seja mais verdadeira.</p>
+
+    <p>Veja agora um exemplo prático com o while:</p>
+
+    <pre>
+  
+  decimal salario = 1000;
+ 
+    while (salario < 5000)
+ 
+    {
+ 
+        salario *= 100;
+ 
+        Console.WriteLine("Meu salário AINDA é de = " + salario);
+ 
+    }
+    </pre>
+
+    <p>Devemos saber que o laço de repetição while pode não ser executado. Isso pode ocorrer quando, na primeira verificação da condição, ela for falsa. Neste cenário, o programa simplesmente irá “pular” para a execução da próxima instrução após o laço.</p>
+ 
+    <hr>
+
+    <h1>Conceitos Do While</h1>
+    
+    <p>O do/while tem quase o mesmo funcionamento que o while, a diferença é que com o uso dele teremos os comandos executados ao menos uma única vez.</p>
+
+    <p>Veja abaixo a sintaxe do do/while:</p>
+
+    <pre>
+  
+  do
+ 
+    {
+ 
+        //comandos;
+ 
+    } while (condicao);
+    
+    </pre>
+    
+    <p>Agora vejam dois exemplos práticos usando do/while:</p>
+
+    <pre>
+  
+  do
+ 
+    {
+ 
+        Console.WriteLine("Dentro do loop");
+ 
+    } while (false);
+ 
+  decimal aumento = 250;
+ 
+    do{
+ 
+      Console.WriteLine("O valor atual do aumento é de: " + aumento);
+ 
+      aumento += 50;
+ 
+      } while (aumento < 500);
+    </pre>
+
+    <p>Nesse último exemplo, faço uma verificação dos valores aumentados e, a cada “passada” do laço, incremento em 50 o valor do aumento.</p>
+
+    <p><strong>O resultado em tela deste exemplo é o seguinte:</strong></p>
+
+    <img alt="Imagem de execução" id="imagem-de-execucao-3-algoritimo" src="img/diciplinas/algoritimo/dowhileexample.jpg">
+
+    <hr>
+
+    <h1>Conceito de for</h1>
+
+    <p>For ele é um laço de repetição que pode ser usadode muitas formas, como já diz laço de repetição, repete quantas vezes for necessário, ou se o usuário pedir!. Neste exemplo é diferente ele termina direto.</p>
+
+    <pre>
+  
+  #include <'stdio.h> // tire as aspas simples para funcionar
+  #include <'stdlib.h> // tire as aspas simples para funcionar
+  #include <'locale.h> // tire as aspas simples para funcionar
+  #include <'stdbool.h> // tire as aspas simples para funcionar
+
+  void main()
+  {
+    int inicial,fina;
+        setlocale(LC_ALL, "");
+
+        printf("digite um número inicial:");
+        scanf("%d", &inicial);
+
+        printf("digite um número final:");
+        scanf("%d", &fina);
+        for(inicial; inicial<=  fina; inicial++){
+        printf("\n %d\n ", inicial);
+        }
+
+  } 
+    </pre>
+
+    <p>Neste exemplo você informa o número inicial e o final, ele far laço e mostrar intervalo os outros números</p>
+
+    <p><strong>O resultado em tela deste exemplo é o seguinte:</strong></p>
+
+    <img alt="Imagem de execução" id="imagem-de-execucao-4-algoritimo" src="img/diciplinas/algoritimo/exfor.jpg">
+      
+    </section>
+
+        
+
+
+  <footer class="footer2">
+      <p> Copyright &copy; Impersystem. Todos os direitos reservados. </p>
+      Página desenvolvida por <a tabindex="1" href="https://www.linkedin.com/in/rodolfo-baldan-140b8516a/" target="blank">Rodolfo Soares Baldan </a>
+    </footer>
+
+<!-- jQuery -->
+    <script type="text/javascript" src="jquery/jquery.js"></script>
+
+    <!-- SmartMenus jQuery plugin -->
+    <script type="text/javascript" src="jquery.smartmenus.js"></script>
+
+    <!-- SmartMenus jQuery init -->
+    <script type="text/javascript">
+      $(function() {
+        $('#main-menu').smartmenus({
+          subMenusSubOffsetX: 1,
+          subMenusSubOffsetY: -8
+        });
+      });
+    </script>   
+
+
+</body>
+</html>

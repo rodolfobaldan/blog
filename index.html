@@ -1,41 +1,119 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-	<title>Responsivo1</title>
-	<link rel="stylesheet" type="text/css" href="estilo.css">
-</head>
-<body>
+  <head>
+    <title>Impersystem Rodolfo - Fatec Jales</title>
+    <meta charset="utf-8">
+    <!-- Aqui chamamos o nosso arquivo css externo -->
+    <link rel="icon" type="imagem/ico" href="img/favicon.ico">
+    <link rel="stylesheet" type="text/css"  href="css/estilo.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-	<div class="fc">
-			<header>
-				Olá mundo!!!!
-			</header>
-			<aside>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-			</aside>
-			<main>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-			</main>
-			<section>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-				</section>
-			<footer>Copirotionnss</footer>
-	</div>
+    <!-- SmartMenus core CSS (required) -->
+    <link href="css/sm-core-css.css" rel="stylesheet" type="text/css" />
 
-</body>
+    <!-- "sm-blue" menu theme (optional, you can use your own CSS, too) -->
+    <link href="css/sm-blue/sm-blue.css" rel="stylesheet" type="text/css" />
+
+
+  </head>
+
+  <body>
+
+    <header>
+      <a href="index.html"><img alt="Logo" class="logotipo" src="img/impersystem1.png"/></a> 
+    </header>
+
+    <!-- Menu -->
+    <nav class="main-nav" role="navigation">
+
+      <!-- Mobile menu toggle button (hamburger/x icon) -->
+      <input id="main-menu-state" type="checkbox" />
+      <label class="main-menu-btn" for="main-menu-state">
+        <span class="main-menu-btn-icon"></span> Toggle main menu visibility
+      </label>
+
+      <h2 class="nav-brand"><a href="index.html">Impersystem</a></h2>
+
+      <!-- Sample menu definition -->
+      <ul id="main-menu" class="sm sm-blue">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Diciplinas</a>
+              <ul>
+                <li><a href="algoritimo.html">Algoritmos e Lógica de Programação</a></li>
+                <li><a href="bases_da_internet.html">Bases da Internet</a></li>
+                <li><a href="criacao_de_conteudo_na_web.html">Criação de Conteúdo na Web</a></li>
+                <li><a href="#">Design Digital</a>
+                  <ul>
+                    <li><a href="">About Vadikom</a></li>
+                    <li><a href="">Projects</a></li>
+                    <li><a href="">Services</a></li>
+                    <li><a href="">Privacy policy</a></li>
+                  </ul>
+                </li>
+                <li><a href="fundamentos_de_matematica_elementar.html">Fundamentos de Matemática Elementar</a></li>  
+                <li><a href="ingles.html">Inglês</a></li> 
+                <li><a href="leitura_e_producao_de_textos.html">Leitura e Produção de Textos</a></li> 
+                <li><a href="padroes_de_projeto_de_sitios_internet_1.html">Padrões de Projeto de Sítios Internet I</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Faculdade</a>
+              <ul>
+                <li><a href="professores.html">Professores</a></li>
+                <li><a href="escola.html">Fatec</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Suporte</a>
+              <ul>
+                <li><a href="#" class="disabled">Para ter acesso. PAGE O SITEF!!!</a></li>
+              </ul>
+            </li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="#">Sobre o Site</a>
+              <ul>
+                <li>
+                  <!-- Mega menu -->
+                  <div class="mega-menu">
+                    <div>
+                      <p>This is a mega drop down test. Just set the "mega-menu" class to the parent UL element to inform the SmartMenus script. It can contain <strong>any HTML</strong>.</p>
+                      <p>Just style the contents as you like (you may need to reset some SmartMenus inherited styles - e.g. for lists, links, etc.)</p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </li>
+          </ul>
+    </nav>
+
+    <article>
+        <p> Seja Bem Vindo </p>
+        <h1 id="titulo"> Ao meu Blog </h1>
+
+
+      </article>
+    <p id="index-1">Este blog foi criado como trabalho. Ele tem por objetivo colocar em prática a programação em HTML5 e CSS3, que foram os conteúdos aprendidos nas aulas do Profº Alexandre Aparecido Bernardes, além de reunir conceitos de Design Digital das aulas da Profª Fabiana Pupin Masson Caravieri</p>
+
+    
+
+    <footer class="footer2">
+      <p> Copyright &copy; Impersystem. Todos os direitos reservados. </p>
+      Página desenvolvida por <a tabindex="1" href="https://www.linkedin.com/in/rodolfo-baldan-140b8516a/" target="blank">Rodolfo Soares Baldan </a>
+    </footer>
+
+    <!-- jQuery -->
+    <script type="text/javascript" src="jquery/jquery.js"></script>
+
+    <!-- SmartMenus jQuery plugin -->
+    <script type="text/javascript" src="jquery.smartmenus.js"></script>
+
+    <!-- SmartMenus jQuery init -->
+    <script type="text/javascript">
+    	$(function() {
+    		$('#main-menu').smartmenus({
+    			subMenusSubOffsetX: 1,
+    			subMenusSubOffsetY: -8
+    		});
+    	});
+    </script>
+
+  </body>
 </html>

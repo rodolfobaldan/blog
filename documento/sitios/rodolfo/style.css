@@ -1,0 +1,61 @@
+body{
+	font-size: 20px;
+	color: black;
+	background: #FFFF00;
+}
+
+.corpo{
+	position: relative;
+    border: #ffffff solid 5px;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 255, .2);
+    top: 15%;
+    left: 50%;
+    margin-left: -382.5px;
+    padding: 0px 5px 0px 5px;
+    height: 300px;
+    width: 765px;
+    background-color: #FFFF00;
+
+}
+
+.texto{
+	margin-top: 5px;
+	text-align: justify;
+}
+
+h1 {
+	font-family: "Lucida Handwriting";
+	color: red;
+}
+
+.img1{
+	float: left;
+	width: 100px;
+	height: 112px;
+}
+
+strong {
+	font-style: italic;
+	text-decoration: underline;
+}
+
+a:link{
+	display: inline;
+ 	width: 614px;
+ 	float: right;
+ 	text-decoration: none;
+ 	text-align:right;
+ 	margin-top: 15px;
+}
+
+a:visited{
+	color: #00FF00;
+}
+
+a:hover{
+	color: #FF620D;
+}
+
+a:active{
+	color: #0027FF;
+}
