@@ -8,11 +8,17 @@
     <link rel="stylesheet" type="text/css"  href="css/estilo.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- SmartMenus core CSS (required) -->
+    <!-- SmartMenus core CSS (precisa para funciona o menu) -->
     <link href="css/sm-core-css.css" rel="stylesheet" type="text/css" />
 
-    <!-- "sm-blue" menu theme (optional, you can use your own CSS, too) -->
+    <!-- "sm-blue" codigos do menu -->
     <link href="css/sm-blue/sm-blue.css" rel="stylesheet" type="text/css" />
+
+    <!-- jQuery -->
+    <script type="text/javascript" src="jquery/jquery.js"></script>
+
+    <!-- SmartMenus jQuery plugin -->
+    <script type="text/javascript" src="jquery.smartmenus.js"></script>
     
 </head>
 <body>
@@ -23,7 +29,7 @@
     <!-- Menu -->
     <nav class="main-nav" role="navigation">
 
-      <!-- Mobile menu toggle button (hamburger/x icon) -->
+      <!-- Botão de alternância do menu para celular (hamburger/x icon) -->
       <input id="main-menu-state" type="checkbox" />
       <label class="main-menu-btn" for="main-menu-state">
         <span class="main-menu-btn-icon"></span> Toggle main menu visibility
@@ -82,42 +88,24 @@
     <dd class="title">Design Digital</dd>
 
     <section class="conteudo_diciplina">
-      <h1>Alguns trabalho de Design</h1>
+      <section>
+        <h1>Alguns trabalho de Design</h1>
 
-      <img alt="Imagem de um desenho Pinguim" title="Pinguim" id="imagem1" name="imagen de pinguim" src="img/diciplinas/design/pinguim.png"><br/>
-      <img alt="Imagem de um cara desenhada" title="Pierre" id="imagem2" name="imagem de pierre" src="img/diciplinas/design/pierre.png"><br/>
-      <img alt="Imagem de um Logo de Hospital" title="Logo de Hospital" id="imagem3" name="Logo de Hospital" src="img/diciplinas/design/hospital.png"><br/>
-      <img alt="Imagem de um logo" title="Solution" id="imagem4" name="imagem solution" src="img/diciplinas/design/solution.png"><br/>
-      <img alt="Imagem de um logo de provedor de internet" title="Logo de Provedor de Internet" id="imagem5" name="Logo de Provedor de Internet" src="img/diciplinas/design/empresa_de_provedor_de_internet.png"><br/>
-      <img alt="Imagem que ilustra contorno em uma palavra" title="Contorno" id="imagem6" name="imagem cotorno" src="img/diciplinas/design/contorno.png"><br/>
-      <img alt="Imagem que ilustra contorno em uma palavra" title="Logo de uma Empresa de Bolacha" id="imagem7" name="imagem cotorno" src="img/diciplinas/design/bolacha.png"><br/>
-          
+        <img alt="Imagem de um desenho Pinguim" title="Pinguim" id="imagem1" name="imagen de pinguim" src="img/diciplinas/design/pinguim.png"><br/>
+        <img alt="Imagem de um cara desenhada" title="Pierre" id="imagem2" name="imagem de pierre" src="img/diciplinas/design/pierre.png"><br/>
+        <img alt="Imagem de um Logo de Hospital" title="Logo de Hospital" id="imagem3" name="Logo de Hospital" src="img/diciplinas/design/hospital.png"><br/>
+        <img alt="Imagem de um logo" title="Solution" id="imagem4" name="imagem solution" src="img/diciplinas/design/solution.png"><br/>
+        <img alt="Imagem de um logo de provedor de internet" title="Logo de Provedor de Internet" id="imagem5" name="Logo de Provedor de Internet" src="img/diciplinas/design/empresa_de_provedor_de_internet.png"><br/>
+        <img alt="Imagem que ilustra contorno em uma palavra" title="Contorno" id="imagem6" name="imagem cotorno" src="img/diciplinas/design/contorno.png"><br/>
+        <img alt="Imagem que ilustra contorno em uma palavra" title="Logo de uma Empresa de Bolacha" id="imagem7" name="imagem cotorno" src="img/diciplinas/design/bolacha.png"><br/>
+      </section>    
       
     </section>
-
     
-
-
     <footer class="footer2">
       <p> Copyright &copy; Impersystem. Todos os direitos reservados. </p>
       Página desenvolvida por <a tabindex="1" href="https://www.linkedin.com/in/rodolfo-baldan-140b8516a/" target="blank">Rodolfo Soares Baldan </a>
     </footer>
-
-    <!-- jQuery -->
-    <script type="text/javascript" src="jquery/jquery.js"></script>
-
-    <!-- SmartMenus jQuery plugin -->
-    <script type="text/javascript" src="jquery.smartmenus.js"></script>
-
-    <!-- SmartMenus jQuery init -->
-    <script type="text/javascript">
-      $(function() {
-        $('#main-menu').smartmenus({
-          subMenusSubOffsetX: 1,
-          subMenusSubOffsetY: -8
-        });
-      });
-    </script>
 
 </body>
 </html>

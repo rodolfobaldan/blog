@@ -8,11 +8,17 @@
     <link rel="stylesheet" type="text/css"  href="css/estilo.css"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- SmartMenus core CSS (required) -->
+    <!-- SmartMenus core CSS (precisa para funciona o menu) -->
     <link href="css/sm-core-css.css" rel="stylesheet" type="text/css" />
 
-    <!-- "sm-blue" menu theme (optional, you can use your own CSS, too) -->
+    <!-- "sm-blue" codigos do menu -->
     <link href="css/sm-blue/sm-blue.css" rel="stylesheet" type="text/css" />
+
+    <!-- jQuery -->
+    <script type="text/javascript" src="jquery/jquery.js"></script>
+
+    <!-- SmartMenus jQuery plugin -->
+    <script type="text/javascript" src="jquery.smartmenus.js"></script>
     
 </head>
 <body>
@@ -23,7 +29,7 @@
     <!-- Menu -->
     <nav class="main-nav" role="navigation">
 
-      <!-- Mobile menu toggle button (hamburger/x icon) -->
+      <!-- Botão de alternância do menu para celular (hamburger/x icon) -->
       <input id="main-menu-state" type="checkbox" />
       <label class="main-menu-btn" for="main-menu-state">
         <span class="main-menu-btn-icon"></span> Toggle main menu visibility
@@ -75,43 +81,31 @@
     <dd class="title">Padrões de Projeto de Sítios Internet I</dd>
 
     <section class="conteudo_diciplina">
-      
-      <h1>Trabalhos</h1>
+      <section>
+        <h1>Trabalho 1</h1>
 
-      <a href="documento/sitios/rodolfo/index.html" target="blank"><img alt="imagem do Trabalho de Web Semântica" title="Trabalho de Web Semântica" class="img-sitio" src="img/diciplinas/sitio/capturar.jpg"></a>
-<hr>
-      <a href="documento/sitios/rodolfo Soares Baldan/index.html" target="blank"><img alt="imagem do Trabalho sobre a Faculdade" title="Trabalho sobre a Faculdade" class="img-sitio" src="img/diciplinas/sitio/capturar1.jpg"></a>
-<hr>
-      <a href="documento/sitios/exemplo de estrutura/Exemplo_estrutura.html" target="blank"><img alt="imagem de um trabalho em aula" title="Exercicio em aula" class="img-sitio" src="img/diciplinas/sitio/capturar2.jpg"></a>
+        <a href="documento/sitios/rodolfo/index.html" target="blank"><img alt="imagem do Trabalho de Web Semântica" title="Trabalho de Web Semântica" class="img-sitio" src="img/diciplinas/sitio/capturar.jpg"></a>
+      </section>
 
-        
+      <hr>
       
+      <section>
+        <h1>Trabalho 2</h1>
+        <a href="documento/sitios/rodolfo Soares Baldan/index.html" target="blank"><img alt="imagem do Trabalho sobre a Faculdade" title="Trabalho sobre a Faculdade" class="img-sitio" src="img/diciplinas/sitio/capturar1.jpg"></a>
+      </section>
+
+      <hr>
+      
+      <section>
+        <h1>Trabalho 3</h1>
+        <a href="documento/sitios/exemplo de estrutura/Exemplo_estrutura.html" target="blank"><img alt="imagem de um trabalho em aula" title="Exercicio em aula" class="img-sitio" src="img/diciplinas/sitio/capturar2.jpg"></a>
+      </section>  
     </section>
 
-    
-
-
-  <footer class="footer2">
+    <footer class="footer2">
       <p> Copyright &copy; Impersystem. Todos os direitos reservados. </p>
       Página desenvolvida por <a tabindex="1" href="https://www.linkedin.com/in/rodolfo-baldan-140b8516a/" target="blank">Rodolfo Soares Baldan </a>
     </footer>
-
-
-<!-- jQuery -->
-    <script type="text/javascript" src="jquery/jquery.js"></script>
-
-    <!-- SmartMenus jQuery plugin -->
-    <script type="text/javascript" src="jquery.smartmenus.js"></script>
-
-    <!-- SmartMenus jQuery init -->
-    <script type="text/javascript">
-      $(function() {
-        $('#main-menu').smartmenus({
-          subMenusSubOffsetX: 1,
-          subMenusSubOffsetY: -8
-        });
-      });
-    </script>
 
 </body>
 </html>

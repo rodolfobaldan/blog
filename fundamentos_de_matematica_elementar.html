@@ -8,11 +8,17 @@
     <link rel="stylesheet" type="text/css"  href="css/estilo.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- SmartMenus core CSS (required) -->
+    <!-- SmartMenus core CSS (precisa para funciona o menu) -->
     <link href="css/sm-core-css.css" rel="stylesheet" type="text/css" />
 
-    <!-- "sm-blue" menu theme (optional, you can use your own CSS, too) -->
+    <!-- "sm-blue" codigos do menu -->
     <link href="css/sm-blue/sm-blue.css" rel="stylesheet" type="text/css" />
+
+    <!-- jQuery -->
+    <script type="text/javascript" src="jquery/jquery.js"></script>
+
+    <!-- SmartMenus jQuery plugin -->
+    <script type="text/javascript" src="jquery.smartmenus.js"></script>
     
 </head>
 <body>
@@ -23,7 +29,7 @@
     <!-- Menu -->
     <nav class="main-nav" role="navigation">
 
-      <!-- Mobile menu toggle button (hamburger/x icon) -->
+      <!-- Botão de alternância do menu para celular (hamburger/x icon) -->
       <input id="main-menu-state" type="checkbox" />
       <label class="main-menu-btn" for="main-menu-state">
         <span class="main-menu-btn-icon"></span> Toggle main menu visibility
@@ -75,7 +81,8 @@
     <dd class="title">Fundamentos de Matemática Elementar</dd>
 
     <section class="conteudo_diciplina">
-      <h1>Teoria dos Conjuntos</h1>
+      <section>
+        <h1>Teoria dos Conjuntos</h1>
         <p>Chamamos de conjunto toda e qualquer coleção de elementos. Estes elementos podem ser números, objetos, figuras, pessoas, animais e tudo o que podemos ordenar, catalogar ou reunir em grupos de seus elementos. Por exemplo: Se quisermos construir o conjunto de crianças de uma escola que possuam exatos 10 anos de idade, podemos dizer que o conjunto é composto pelos alunos Pedrinho, Joãozinho, Mariazinha, ..., e todos os alunos que tenham 10 anos de idade na escola. Matematicamente, quase sempre os conjuntos serão compostos por números e que dependam de algumas condições. Por exemplo: O conjunto dos números Reais, o conjunto dos números Inteiros, o conjunto dos números maiores do que 2 e menores do que 7, e muito mais.</p>
 
         <p>A relação básica entre um conjunto e o elemento que o compõe é chamada de relação de pertinência, ou seja, definimos um conjunto quando existe uma regra que permite decidir se um elemento pertence ou não a ele. Se um elemento x pertence a um conjunto (ou coleção) A, dizemos que x pertence a A. Formalmente escrevemos:</p>
@@ -105,10 +112,12 @@
         <p><strong class="mat">A={x&isin;ℕ:5&le;x&le;10}</strong></p>
 
         <p>Lê-se: O conjunto A é igual a x (elemento qualquer de A) que pertence aos naturais, tal que 5 é menor ou igual a x e x é menor ou igual a 10 (ou x está entre 5 e 10).</p>
-        
-       <hr>
+      </section>
+      
+      <hr>
 
-      <h1>Conjunto vazio</h1>
+      <section>
+        <h1>Conjunto vazio</h1>
         
         <p>Existem alguns conjuntos que são representados por uma propriedade onde não é possível gerar elementos. Vejamos um caso:</p>
 
@@ -119,9 +128,11 @@
         <p><strong class="mat">A=&empty;</strong></p>
 
         <p><strong>Atenção! O conceito de conjunto vazio remete a não existência de elementos, e não que o seu elemento é zero.</strong></p>
-        
-        <hr>
+      </section>  
+      
+      <hr>
 
+      <section>
         <h1>Subconjuntos</h1>
 
         <p>Note que no exemplo 1, os elementos do conjunto A estão contidos nos números Naturais, dizemos então que o conjunto A é um Subconjunto dos números Naturais, ou seja, o conjunto A está contido no conjunto ℕ. Escrevemos então:</p>
@@ -145,9 +156,11 @@
           <li>Se A &sub; B e se B &sub; C então A &sub; C.</li>
         </ul>
         </p>
+      </section>  
+      
+      <hr>
 
-        <hr>
-
+      <section>
         <h1>Operações entre conjuntos</h1>
         
         <p><strong>União de conjuntos:</strong> A união (ou reunião) de conjuntos é a junção dos elementos de um conjunto A mais ou elementos de um conjunto B. Podemos afirmar então que se um elemento x pertencer a união de A com B, então x pertence a A ou pertence a B. Formalmente definimos:</p>        
@@ -163,34 +176,13 @@
         <p><strong class="mat">A &cap; B={x:x &isin; A e x &isin; B}</strong></p>
 
         <img alt="imagem de um diagrama" id="imagem-matematica-diagrama" src="img/diciplinas/matematica/img_5b6df72018240.png">
-        
-      
+      </section> 
     </section>
 
-    
-
-
-  <footer class="footer2">
+    <footer class="footer2">
       <p> Copyright &copy; Impersystem. Todos os direitos reservados. </p>
       Página desenvolvida por <a tabindex="1" href="https://www.linkedin.com/in/rodolfo-baldan-140b8516a/" target="blank">Rodolfo Soares Baldan </a>
     </footer>
-
-
-<!-- jQuery -->
-    <script type="text/javascript" src="jquery/jquery.js"></script>
-
-    <!-- SmartMenus jQuery plugin -->
-    <script type="text/javascript" src="jquery.smartmenus.js"></script>
-
-    <!-- SmartMenus jQuery init -->
-    <script type="text/javascript">
-      $(function() {
-        $('#main-menu').smartmenus({
-          subMenusSubOffsetX: 1,
-          subMenusSubOffsetY: -8
-        });
-      });
-    </script>
 
 </body>
 </html>

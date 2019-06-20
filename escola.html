@@ -10,11 +10,17 @@
     <link rel="stylesheet" type="text/css" href="css/grid.css"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- SmartMenus core CSS (precisa disso) -->
+    <!-- SmartMenus core CSS (precisa para funciona o menu) -->
     <link href="css/sm-core-css.css" rel="stylesheet" type="text/css" />
 
-    <!-- "sm-blue" menu-->
+    <!-- "sm-blue" codigos do menu -->
     <link href="css/sm-blue/sm-blue.css" rel="stylesheet" type="text/css" />
+
+    <!-- jQuery -->
+    <script type="text/javascript" src="jquery/jquery.js"></script>
+
+    <!-- SmartMenus jQuery plugin -->
+    <script type="text/javascript" src="jquery.smartmenus.js"></script>
     
 </head>
 <body>
@@ -25,7 +31,7 @@
     <!-- Menu -->
     <nav class="main-nav" role="navigation">
 
-      <!-- Mobile menu toggle button (hamburger/x icon) -->
+      <!-- Botão de alternância do menu para celular (hamburger/x icon) -->
       <input id="main-menu-state" type="checkbox" />
       <label class="main-menu-btn" for="main-menu-state">
         <span class="main-menu-btn-icon"></span> Toggle main menu visibility
@@ -77,8 +83,8 @@
     <dd class="title">Sobre a Faculdade</dd>
 
     <section class="conteudo_diciplina">
-      
-      <h1>Sobre</h1>
+      <section>
+        <h1>Sobre</h1>
         
         <p><strong>Nome completo:</strong> Faculdade de Tecnologia Prof. José Camargo – Fatec Jales</p>
 
@@ -97,9 +103,11 @@
         <p><strong>Responsável pela Mantenedora:</strong> Diretora Superintendente: Laura Laganá</p>
 
         <p><strong>Vice-Diretor Superintendente:</strong> Luiz Antonio Tozi</p>
+      </section>
+        
+      <hr>
 
-        <hr>
-
+      <section>
         <h3>SOBRE O CENTRO PAULA SOUZA</h3>
 
         <p>O Centro Paula Souza é uma autarquia do Governo do Estado de São Paulo, vinculada à Secretaria de Desenvolvimento Econômico, Ciência, Tecnologia e Inovação (SDECTI). A instituição administra 220 Escolas Técnicas Estaduais (Etecs) e 66 Faculdades de Tecnologia (Fatecs), reunindo mais de 283 mil alunos em cursos técnicos de nível médio e superiores tecnológicos, em mais de 300 municípios (CPS, 2015).</p>
@@ -109,29 +117,37 @@
         <p>A instituição foi criada pelo decreto-lei de 6 de outubro de 1969, como resultado de um grupo de trabalho para avaliar a viabilidade de implantação gradativa de uma rede de cursos superiores de tecnologia com duração de dois e três anos (CPS, 2015).</p>
 
         <p>A trajetória do Centro Paula Souza vai além de seus 45 anos de fundação. Sua memória mistura-se com a história centenária do ensino profissional público em São Paulo. Em 1969, o órgão nasceu com a missão de organizar os primeiros cursos superiores de tecnologia, mas no decorrer das décadas, acabou englobando também a educação profissional do estado em nível médio, absorvendo unidades já existentes e construindo novas Etecs e Fatecs para expandir o ensino profissional a todas as regiões do Estado (CPS, 2015).</p>
+      </section> 
         
-        <hr>
+      <hr>
 
+      <section>
         <h3>SOBRE A FATEC JALES</h3>
 
         <p>A Fatec Jales, criada pelo Decreto nº 52.122, de 3 de setembro de 2007, publicado no DOE de 4 de setembro de 2007, iniciou suas atividades em 10 de setembro de 2007, instalada em espaço concedido à Secretaria da Ciência, Tecnologia e Desenvolvimento Econômico pela Secretaria da Educação, de acordo com Decreto 51.068 de 24 de agosto de 2006. O curso superior inicial oferecido foi de Tecnologia em Agronegócio, com 80 vagas semestrais, sendo 40 no período matutino e 40 no período noturno, com a duração de seis semestres. No primeiro semestre de 2010, foi implantado o curso de Tecnologia em Sistemas para Internet, com 70 vagas semestrais, sendo 35 no período vespertino e 35 no período noturno, também com duração de seis semestres. A partir do primeiro semestre de 2013, o curso de Sistemas para Internet passou a ser oferecido nos períodos matutino e noturno.</p>
 
         <p>No segundo semestre de 2014, foi implantado o curso de Tecnologia em Gestão Empresarial, com 40 vagas semestrais no período noturno. A partir do primeiro semestre de 2015, esse passou a ser oferecido também na modalidade a distância, com 40 vagas semestrais.</p>
+      </section>
 
-        <hr>
+      <hr>
 
+      <section>
         <h3>MISSÃO</h3>
 
         <p>Formar profissionais competentes, capazes de atuar em um mercado de trabalho em constante evolução, de maneira eficaz, com propostas inovadoras e princípios éticos.</p>
+      </section>  
+      
+      <hr>
 
-        <hr>
-
+      <section>
         <h3>VISÃO</h3>
 
         <p>Ser referência em Ensino Superior Público Tecnológico em sua área de atuação.</p>
+      </section>
+        
+      <hr>
 
-        <hr>
-
+      <section>
         <h3>GALERIA - FACULDADE</h3>
 
         <p>
@@ -144,33 +160,13 @@
             <img src="img/galeria/img-galeria-6.jpg" alt="Sample photo">
           </div>
         </p>
-      
+      </section>
     </section>
 
-    
-
-
-  <footer class="footer2">
+    <footer class="footer2">
       <p> Copyright &copy; Impersystem. Todos os direitos reservados. </p>
       Página desenvolvida por <a tabindex="1" href="https://www.linkedin.com/in/rodolfo-baldan-140b8516a/" target="blank">Rodolfo Soares Baldan </a>
     </footer>
-
-
-<!-- jQuery -->
-    <script type="text/javascript" src="jquery/jquery.js"></script>
-
-    <!-- SmartMenus jQuery plugin -->
-    <script type="text/javascript" src="jquery.smartmenus.js"></script>
-
-    <!-- SmartMenus jQuery init -->
-    <script type="text/javascript">
-      $(function() {
-        $('#main-menu').smartmenus({
-          subMenusSubOffsetX: 1,
-          subMenusSubOffsetY: -8
-        });
-      });
-    </script>
 
 </body>
 </html>

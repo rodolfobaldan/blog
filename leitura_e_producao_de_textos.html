@@ -8,11 +8,17 @@
     <link rel="stylesheet" type="text/css"  href="css/estilo.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- SmartMenus core CSS (required) -->
+    <!-- SmartMenus core CSS (precisa para funciona o menu) -->
     <link href="css/sm-core-css.css" rel="stylesheet" type="text/css" />
 
-    <!-- "sm-blue" menu theme (optional, you can use your own CSS, too) -->
+    <!-- "sm-blue" codigos do menu -->
     <link href="css/sm-blue/sm-blue.css" rel="stylesheet" type="text/css" />
+
+    <!-- jQuery -->
+    <script type="text/javascript" src="jquery/jquery.js"></script>
+
+    <!-- SmartMenus jQuery plugin -->
+    <script type="text/javascript" src="jquery.smartmenus.js"></script>
     
 </head>
 <body>
@@ -23,7 +29,7 @@
     <!-- Menu -->
     <nav class="main-nav" role="navigation">
 
-      <!-- Mobile menu toggle button (hamburger/x icon) -->
+      <!-- Botão de alternância do menu para celular (hamburger/x icon) -->
       <input id="main-menu-state" type="checkbox" />
       <label class="main-menu-btn" for="main-menu-state">
         <span class="main-menu-btn-icon"></span> Toggle main menu visibility
@@ -75,77 +81,65 @@
     <dd class="title">Leitura e Produção de Textos</dd>
 
     <section class="conteudo_diciplina">
-      <h1>PDF Português</h1>
+      <section>
+        <h1>PDF Português</h1>
         
         <a href="documento/portugues/pdfportugues.pdf"><p>Clique aqui para abrir o PDF</p></a>
-
-        <hr>
-
-      <p><strong>Artigos de opinão:</strong></p>
-
-      <h3>Educação</h3>
+      </section>
       
-      <p>A educação no Brasil tem sido discutida cada vez mais, uma vez que ela é o principal aspecto de desenvolvimento de uma nação.</p>
+      <hr>
 
-      <p>Enquanto nosso governo investe na expansão econômica e financeira do país, a educação regride, apresentando muitos problemas estruturais. Principalmente nas pequenas cidades, o investimento para a educação é mal aplicado e, muitas vezes, as verbas são desviadas.</p>
+      <section>
+        <p><strong>Artigos de opinão:</strong></p>
 
-      <p>Por esse motivo, o nosso país está longe de ser um país desenvolvido até que o descaso com a educação persista.</p>
-
-      <p>Acima de tudo, os governantes do nosso país precisam ter a consciência de que enquanto a educação estiver à margem, problemas como violência e pobreza persistirão. Assim, o lema da nossa bandeira será sempre uma ironia. “Ordem e progresso” ou “Desordem e Regresso”?</p>
-
-      <p>Nosso grande educador Paulo Freire já dizia: <strong id="italic">“Se a educação sozinha não transforma a sociedade, sem ela tampouco a sociedade muda”</strong>.</p>
-
-      <h3>Drogas</h3>
-
-      <p>Atualmente, o problema das drogas tornou-se um tema muito recorrente em diversas partes do mundo. O surgimento de novas sustâncias entorpecentes tem levado ao aumento do número de dependentes.</p>
-
-      <p>No Brasil, fica difícil mencionar o problema das drogas e não pensar na cidade de São Paulo, onde a Cracolândia se expande cada vez mais.</p>
-
-      <p>O crack tem demostrado a forte dependência que causa nos indivíduos e os problemas estruturais que geram, dentre eles a pobreza, o desemprego e a proliferação de doenças. A negligência do governo em relação a isso é notória.</p>
-
-      <p>Ou seja, o foco maior está em acabar com o problema do crack, ao invés de oferecer melhoria na vida dos viciados. Sendo assim, os viciados em crack continuam vivendo em péssimas condições e infelizmente, ainda são tratados como "bandidos".</p>
-
-      <h3>Racismo</h3>
-
-      <p>Ainda que grande parte da população brasileira seja descendente de negros, o problema do racismo está longe de ser resolvido.</p>
-
-      <p>No período colonial, Portugal trazia os negros da África para trabalharem no país em condição de escravos. Desde então, o racismo esteve incutido na mente de muitos brasileiros.</p>
-
-      <p>Embora a Lei Áurea tenha libertado os negros do trabalho escravo em 1888, a população negra apresenta os maiores problemas ainda hoje no país. Destacam-se, as condições de vida, acesso ao trabalho, a moradia, dentre outros.</p>
-
-      <p>Se observarmos as favelas do país ou mesmo as penitenciárias, o número de negros é sem dúvida maior. A grande questão é: até quando o racismo persistirá no nosso país?. Pois mesmo séculos depois, ainda é possível nos deparamos com um racismo velado no Brasil.</p>
-
-      <p>A implementação de políticas públicas poderá resolver nosso problema, mas ainda temos muitos caminhos a percorrer. Infelizmente, creio que não estarei vivo para contemplar essa conquista.</p>
-
-
-        
+        <h3>Educação</h3>
       
+        <p>A educação no Brasil tem sido discutida cada vez mais, uma vez que ela é o principal aspecto de desenvolvimento de uma nação.</p>
+
+        <p>Enquanto nosso governo investe na expansão econômica e financeira do país, a educação regride, apresentando muitos problemas estruturais. Principalmente nas pequenas cidades, o investimento para a educação é mal aplicado e, muitas vezes, as verbas são desviadas.</p>
+
+        <p>Por esse motivo, o nosso país está longe de ser um país desenvolvido até que o descaso com a educação persista.</p>
+
+        <p>Acima de tudo, os governantes do nosso país precisam ter a consciência de que enquanto a educação estiver à margem, problemas como violência e pobreza persistirão. Assim, o lema da nossa bandeira será sempre uma ironia. “Ordem e progresso” ou “Desordem e Regresso”?</p>
+
+        <p>Nosso grande educador Paulo Freire já dizia: <strong id="italic">“Se a educação sozinha não transforma a sociedade, sem ela tampouco a sociedade muda”</strong>.</p>
+      </section>  
+      
+      <hr>
+
+      <section>
+        <h3>Drogas</h3>
+
+        <p>Atualmente, o problema das drogas tornou-se um tema muito recorrente em diversas partes do mundo. O surgimento de novas sustâncias entorpecentes tem levado ao aumento do número de dependentes.</p>
+
+        <p>No Brasil, fica difícil mencionar o problema das drogas e não pensar na cidade de São Paulo, onde a Cracolândia se expande cada vez mais.</p>
+
+        <p>O crack tem demostrado a forte dependência que causa nos indivíduos e os problemas estruturais que geram, dentre eles a pobreza, o desemprego e a proliferação de doenças. A negligência do governo em relação a isso é notória.</p>
+
+        <p>Ou seja, o foco maior está em acabar com o problema do crack, ao invés de oferecer melhoria na vida dos viciados. Sendo assim, os viciados em crack continuam vivendo em péssimas condições e infelizmente, ainda são tratados como "bandidos".</p>
+      </section>
+      
+      <hr>
+
+      <section>
+        <h3>Racismo</h3>
+
+        <p>Ainda que grande parte da população brasileira seja descendente de negros, o problema do racismo está longe de ser resolvido.</p>
+
+        <p>No período colonial, Portugal trazia os negros da África para trabalharem no país em condição de escravos. Desde então, o racismo esteve incutido na mente de muitos brasileiros.</p>
+
+        <p>Embora a Lei Áurea tenha libertado os negros do trabalho escravo em 1888, a população negra apresenta os maiores problemas ainda hoje no país. Destacam-se, as condições de vida, acesso ao trabalho, a moradia, dentre outros.</p>
+
+        <p>Se observarmos as favelas do país ou mesmo as penitenciárias, o número de negros é sem dúvida maior. A grande questão é: até quando o racismo persistirá no nosso país?. Pois mesmo séculos depois, ainda é possível nos deparamos com um racismo velado no Brasil.</p>
+
+        <p>A implementação de políticas públicas poderá resolver nosso problema, mas ainda temos muitos caminhos a percorrer. Infelizmente, creio que não estarei vivo para contemplar essa conquista.</p>
+      </section> 
     </section>
 
-    
-
-
-  <footer class="footer2">
+    <footer class="footer2">
       <p> Copyright &copy; Impersystem. Todos os direitos reservados. </p>
       Página desenvolvida por <a tabindex="1" href="https://www.linkedin.com/in/rodolfo-baldan-140b8516a/" target="blank">Rodolfo Soares Baldan </a>
     </footer>
-
-
-<!-- jQuery -->
-    <script type="text/javascript" src="jquery/jquery.js"></script>
-
-    <!-- SmartMenus jQuery plugin -->
-    <script type="text/javascript" src="jquery.smartmenus.js"></script>
-
-    <!-- SmartMenus jQuery init -->
-    <script type="text/javascript">
-      $(function() {
-        $('#main-menu').smartmenus({
-          subMenusSubOffsetX: 1,
-          subMenusSubOffsetY: -8
-        });
-      });
-    </script>
 
 </body>
 </html>

@@ -8,11 +8,17 @@
     <link rel="stylesheet" type="text/css"  href="css/estilo.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- SmartMenus core CSS (required) -->
+    <!-- SmartMenus core CSS (precisa para funciona o menu) -->
     <link href="css/sm-core-css.css" rel="stylesheet" type="text/css" />
 
-    <!-- "sm-blue" menu theme (optional, you can use your own CSS, too) -->
+    <!-- "sm-blue" codigos do menu -->
     <link href="css/sm-blue/sm-blue.css" rel="stylesheet" type="text/css" />
+
+    <!-- jQuery -->
+    <script type="text/javascript" src="jquery/jquery.js"></script>
+
+    <!-- SmartMenus jQuery plugin -->
+    <script type="text/javascript" src="jquery.smartmenus.js"></script>
     
 </head>
 <body>
@@ -23,7 +29,7 @@
   <!-- Menu -->
   <nav class="main-nav" role="navigation">
 
-    <!-- Mobile menu toggle button (hamburger/x icon) -->
+    <!-- Botão de alternância do menu para celular (hamburger/x icon) -->
     <input id="main-menu-state" type="checkbox" />
     <label class="main-menu-btn" for="main-menu-state">
       <span class="main-menu-btn-icon"></span> Toggle main menu visibility
@@ -70,132 +76,135 @@
     </ul>
   </nav>
 
-    <dd class="title">Bases da Internet</dd>
+  <dd class="title">Bases da Internet</dd>
 
-    <section class="conteudo_diciplina">
-      
-        <h1>Manual de segurança</h1>
-        <section id="seguranca-redes">
-          <h4>Segurança de redes</h4>
-          <!--
-          <img alt="imagem de acesso a internet" src="img/diciplinas/bases_internet/acesso-a-internet.jpg.jpg" width="250" height="256" id="imagem-basesdainternet-acesso" /> -->
+  <section class="conteudo_diciplina">
+    <h1>Manual de segurança</h1>
+    <section id="seguranca-redes">
+      <h4>Segurança de redes</h4>
+      <!--
+      <img alt="imagem de acesso a internet" src="img/diciplinas/bases_internet/acesso-a-internet.jpg.jpg" width="250" height="256" id="imagem-basesdainternet-acesso" /> -->
 
-          <dd id="imagem-basesdainternet-acesso"></dd>
+      <dd id="imagem-basesdainternet-acesso"></dd>
 
-          <p>Inicialmente, grande parte dos acessos à Internet eram realizados por meio de conexão discada com velocidades que dificilmente ultrapassavam 56 Kbps. O usuário, de posse de um modem e de uma linha telefônica, se conectava ao provedor de acesso e mantinha esta conexão apenas pelo tempo necessário para realizar as ações que dependessem da rede.</p>
+      <p>Inicialmente, grande parte dos acessos à Internet eram realizados por meio de conexão discada com velocidades que dificilmente ultrapassavam 56 Kbps. O usuário, de posse de um modem e de uma linha telefônica, se conectava ao provedor de acesso e mantinha esta conexão apenas pelo tempo necessário para realizar as ações que dependessem da rede.</p>
 
-          <p>Desde então, grandes avanços ocorreram e novas alternativas surgiram, sendo que atualmente grande parte dos computadores pessoais ficam conectados à rede pelo tempo em que estiverem ligados e a velocidades que podem chegar a até 100 Mbps.Conexão à Internet também deixou de ser um recurso oferecido apenas a computadores, visto a grande quantidade de equipamentos com acesso à rede, como dispositivos móveis, TVs, eletrodomésticos e sistemas de áudio.</p>
+      <p>Desde então, grandes avanços ocorreram e novas alternativas surgiram, sendo que atualmente grande parte dos computadores pessoais ficam conectados à rede pelo tempo em que estiverem ligados e a velocidades que podem chegar a até 100 Mbps.Conexão à Internet também deixou de ser um recurso oferecido apenas a computadores, visto a grande quantidade de equipamentos com acesso à rede, como dispositivos móveis, TVs, eletrodomésticos e sistemas de áudio.</p>
 
-          <p>Independente do tipo de tecnologia usada, ao conectar o seu computador à rede ele pode estar sujeito a ameaças, como:</p>
+      <p>Independente do tipo de tecnologia usada, ao conectar o seu computador à rede ele pode estar sujeito a ameaças, como:</p>
             
-          <p><strong>Furto de dados:</strong> Informações pessoais e outros dados podem ser obtidos tanto pela interceptação de tráfego como pela exploração de possíveis vulnerabilidades existentes em seu computador.</p>
+      <p><strong>Furto de dados:</strong> Informações pessoais e outros dados podem ser obtidos tanto pela interceptação de tráfego como pela exploração de possíveis vulnerabilidades existentes em seu computador.</p>
           
-          <p><strong>Uso indevido de recursos:</strong> Um atacante pode ganhar acesso a um computador conectado à rede e utilizá-lo para a prática de atividades maliciosas, como obter arquivos, disseminar spam, propagar códigos maliciosos, desferir ataques e esconder a real identidade do atacante.</p>
+      <p><strong>Uso indevido de recursos:</strong> Um atacante pode ganhar acesso a um computador conectado à rede e utilizá-lo para a prática de atividades maliciosas, como obter arquivos, disseminar spam, propagar códigos maliciosos, desferir ataques e esconder a real identidade do atacante.</p>
           
-          <p><strong>Varredura:</strong> Um atacante pode fazer varreduras na rede, a fim de descobrir outros computadores e, então, tentar executar ações maliciosas, como ganhar acesso e explorar vulnerabilidades (mais detalhes na Seção 3.2 do Capítulo Ataques na Internet).</p>
+      <p><strong>Varredura:</strong> Um atacante pode fazer varreduras na rede, a fim de descobrir outros computadores e, então, tentar executar ações maliciosas, como ganhar acesso e explorar vulnerabilidades (mais detalhes na Seção 3.2 do Capítulo Ataques na Internet).</p>
           
-          <p><strong>Interceptação de tráfego:</strong> Um atacante, que venha a ter acesso à rede, pode tentar interceptar o tráfego e, então, coletar dados que estejam sendo transmitidos sem o uso de criptografia (mais detalhes na Seção 3.4 do Capítulo Ataques na Internet).</p>
+      <p><strong>Interceptação de tráfego:</strong> Um atacante, que venha a ter acesso à rede, pode tentar interceptar o tráfego e, então, coletar dados que estejam sendo transmitidos sem o uso de criptografia (mais detalhes na Seção 3.4 do Capítulo Ataques na Internet).</p>
           
-          <p><strong>Exploração de vulnerabilidades:</strong> Por meio da exploração de vulnerabilidades, um computador pode ser infectado ou invadido e, sem que o dono saiba, participar de ataques, ter dados indevidamente coletados e ser usado para a propagação de códigos maliciosos. Além disto, equipamentos de rede (como modems e roteadores) vulneráveis também podem ser invadidos, terem as configurações alteradas e fazerem com que as conexões dos usuários sejam redirecionadas para sites fraudulentos.</p>
+      <p><strong>Exploração de vulnerabilidades:</strong> Por meio da exploração de vulnerabilidades, um computador pode ser infectado ou invadido e, sem que o dono saiba, participar de ataques, ter dados indevidamente coletados e ser usado para a propagação de códigos maliciosos. Além disto, equipamentos de rede (como modems e roteadores) vulneráveis também podem ser invadidos, terem as configurações alteradas e fazerem com que as conexões dos usuários sejam redirecionadas para sites fraudulentos.</p>
           
-          <p><strong>Ataque de negação de serviço:</strong> Um atacante pode usar a rede para enviar grande volume de mensagens para um computador, até torná-lo inoperante ou incapaz de se comunicar.</p>
+      <p><strong>Ataque de negação de serviço:</strong> Um atacante pode usar a rede para enviar grande volume de mensagens para um computador, até torná-lo inoperante ou incapaz de se comunicar.</p>
           
-          <p><strong>Ataque de força bruta:</strong> Computadores conectados à rede e que usem senhas como método de autenticação, estão expostos a ataques de força bruta. Muitos computadores, infelizmente, utilizam, por padrão, senhas de tamanho reduzido e/ou de conhecimento geral dos atacantes.</p>
+      <p><strong>Ataque de força bruta:</strong> Computadores conectados à rede e que usem senhas como método de autenticação, estão expostos a ataques de força bruta. Muitos computadores, infelizmente, utilizam, por padrão, senhas de tamanho reduzido e/ou de conhecimento geral dos atacantes.</p>
           
-          <p><strong>Ataque de personificação:</strong> Um atacante pode introduzir ou substituir um dispositivo de rede para induzir outros a se conectarem a este, ao invés do dispositivo legítimo, permitindo a captura de senhas de acesso e informações que por ele passem a trafegar.</p>
-        </section>
-        
-        <hr>
-        
-        <h4>Cuidados gerais</h4>
-            
-        <img alt="Imagem de Cuidado" src="img/diciplinas/bases_internet/cuidado.jpg" id="imagem-basesdainternet-cuidado" />
-
-        <p>Alguns cuidados que você deve tomar ao usar redes, independentemente da tecnologia, são:</p>
-
-        <p>1º Mantenha seu computador atualizado, com as versões mais recentes e com todas as atualizações aplicadas ;</p>
-        <p>2º Utilize e mantenha atualizados mecanismos de segurança, como programa antimalware e firewall pessoal ;</p>
-        <p>3º Seja cuidadoso ao elaborar e ao usar suas senhas ;</p>
-        <p>4º Utilize conexão segura sempre que a comunicação envolver dados confidenciais ;</p>
-        <p>5º Caso seu dispositivo permita o compartilhamento de recursos, desative esta função e somente a ative quando necessário e usando senhas difíceis de serem descobertas;</p>
-        
-        <hr>      
-        
-        <h4>Wi-Fi</h4>
-            
-        <img alt="Imagem de Wifi" src="img/diciplinas/bases_internet/wifi-9-3-PT.png" id="imagem-basesdainternet-wifi"/>
-
-        <p>Wi-Fi (Wireless Fidelity) é um tipo de rede local que utiliza sinais de rádio para comunicação. Possui dois modos básicos de operação:</p>
-
-        <p><strong>Infraestrutura:</strong> Normalmente o mais encontrado, utiliza um concentrador de acesso (Access Point - AP) ou um roteador wireless.</p>
-            
-        <p><strong>Ponto a ponto (ad-hoc):</strong> Permite que um pequeno grupo de máquinas se comunique diretamente, sem a necessidade de um AP.</p>
-            
-        <p>Redes Wi-Fi se tornaram populares pela mobilidade que oferecem e pela facilidade de instalação e de uso em diferentes tipos de ambientes. Embora sejam bastante convenientes, há alguns riscos que você deve considerar ao usá-las, como:</p>
-
-        <p>Por se comunicarem por meio de sinais de rádio, não há a necessidade de acesso físico a um ambiente restrito, como ocorre com as redes cabeadas. Devido a isto, os dados transmitidos por clientes legítimos podem ser interceptados por qualquer pessoa próxima com um mínimo de equipamento (por exemplo, um notebook ou tablet);</p>
-            
-        <p>Por terem instalação bastante simples, muitas pessoas as instalam em casa (ou mesmo em empresas, sem o conhecimento dos administradores de rede), sem qualquer cuidado com configurações mínimas de segurança, e podem vir a ser abusadas por atacantes, por meio de uso não autorizado ou de "sequestro"2;</p>
-            
-        <p>Em uma rede Wi-Fi pública (como as disponibilizadas em aeroportos, hotéis e conferências) os dados que não estiverem criptografados podem ser indevidamente coletados por atacantes;</p>
-            
-        <p>Uma rede Wi-Fi aberta pode ser propositadamente disponibilizada por atacantes para atrair usuários, a fim de interceptar o tráfego (e coletar dados pessoais) ou desviar a navegação para sites falsos.</p>
-            
-        <p>Para resolver alguns destes riscos foram desenvolvidos mecanismos de segurança, como:</p>
-
-        <p>WEP (Wired Equivalent Privacy): primeiro mecanismo de segurança a ser lançado. É considerado frágil e, por isto, o uso deve ser evitado.</p>
-            
-        <p>WPA (Wi-Fi Protected Access): mecanismo desenvolvido para resolver algumas das fragilidades do WEP. É o nível mínimo de segurança que é recomendado.</p>
-            
-        <p>WPA-2: similar ao WPA, mas com criptografia considerada mais forte. É o mecanismo mais recomendado.</p>
-            
-        <p><strong>Cuidados a serem tomados:</strong></p>
-
-        <p>Habilite a interface de rede Wi-Fi do seu computador ou dispositivo móvel somente quando usá-la e desabilite-a após o uso;</p>
-              
-        <p>Desabilite o modo ad-hoc (use-o apenas quando necessário e desligue-o quando não precisar). Alguns equipamentos permitem inibir conexão com redes ad-hoc, utilize essa função caso o dispositivo permita;</p>
-              
-        <p>Use, quando possível, redes que oferecem autenticação e criptografia entre o cliente e o AP (evite conectar-se a redes abertas ou públicas, sem criptografia, especialmente as que você não conhece a origem);</p>
-              
-        <p>Considere o uso de criptografia nas aplicações, como por exemplo, PGP para o envio de e-mails, SSH para conexões remotas ou ainda VPNs;</p>
-              
-        <p>Evite o acesso a serviços que não utilizem conexão segura ("https");</p>
-              
-        <p>Evite usar WEP, pois ele apresenta vulnerabilidades que, quando exploradas, permitem que o mecanismo seja facilmente quebrado;</p>
-              
-        <p>Use WPA2 sempre que disponível (caso seu dispositivo não tenha este recurso, utilize no mínimo WPA).</p>
-            
-        <p><strong>Cuidados ao montar uma rede sem fio doméstica:</strong></p>
-
-        <hr>
-
-        <img alt="Imagem ilustrativa de um rede" id="imagem-basesdainternet-vps" src="img/diciplinas/bases_internet/chia-se-may-in-vps.gif">
-
-        <p>Posicione o AP longe de janelas e próximo ao centro de sua casa a fim de reduzir a propagação do sinal e controlar a abrangência (conforme a potência da antena do AP e do posicionamento no recinto, sua rede pode abranger uma área muito maior que apenas a da sua residência e, com isto, ser acessada sem o seu conhecimento ou ter o tráfego capturado por vizinhos ou pessoas que estejam nas proximidades);</p>
-              
-        <p>Altere as configurações padrão que acompanham o seu AP. Alguns exemplos são:</p>
-            
-        <p>Altere as senhas originais, tanto de administração do AP como de autenticação de usuários;</p>
-              
-        <p>Assegure-se de utilizar senhas bem elaboradas e difíceis de serem descobertas (mais detalhes no Capítulo Contas e senhas);</p>
-              
-        <p>Altere o SSID (Server Set IDentifier);</p>
-              
-        <p>Ao configurar o SSID procure não usar dados pessoais e nem nomes associados ao fabricante ou modelo, pois isto facilita a identificação de características técnicas do equipamento e pode permitir que essas informações sejam associadas a possíveis vulnerabilidades existentes;</p>
-              
-        <p>Desabilite a difusão (broadcast) do SSID, evitando que o nome da rede seja anunciado para outros dispositivos;</p>
-              
-        <p>Desabilite o gerenciamento do AP via rede sem fio, de tal forma que, para acessar funções de administração, seja necessário conectar-se diretamente a ele usando uma rede cabeada. Desta maneira, um possível atacante externo (via rede sem fio) não será capaz de acessar o AP para promover mudanças na configuração.</p>
-              
-        <p>Não ative WEP, pois ele apresenta vulnerabilidades que, quando exploradas, permitem que o mecanismo seja facilmente quebrado;</p>
-              
-        <p>Utilize WPA2 ou, no mínimo, WPA;</p>
-              
-        <p>Caso seu AP disponibilize WPS (Wi-Fi Protected Setup), desabilite-o a fim de evitar acessos indevidos;</p>
-              
-        <p>Desligue seu AP quando não usar sua rede.</p>
-
+      <p><strong>Ataque de personificação:</strong> Um atacante pode introduzir ou substituir um dispositivo de rede para induzir outros a se conectarem a este, ao invés do dispositivo legítimo, permitindo a captura de senhas de acesso e informações que por ele passem a trafegar.</p>
     </section>
+        
+    <hr>
+        
+    <section>
+      <h4>Cuidados gerais</h4>
+            
+      <img alt="Imagem de Cuidado" src="img/diciplinas/bases_internet/cuidado.jpg" id="imagem-basesdainternet-cuidado" />
+
+      <p>Alguns cuidados que você deve tomar ao usar redes, independentemente da tecnologia, são:</p>
+
+      <p>1º Mantenha seu computador atualizado, com as versões mais recentes e com todas as atualizações aplicadas ;</p>
+      <p>2º Utilize e mantenha atualizados mecanismos de segurança, como programa antimalware e firewall pessoal ;</p>
+      <p>3º Seja cuidadoso ao elaborar e ao usar suas senhas ;</p>
+      <p>4º Utilize conexão segura sempre que a comunicação envolver dados confidenciais ;</p>
+      <p>5º Caso seu dispositivo permita o compartilhamento de recursos, desative esta função e somente a ative quando necessário e usando senhas difíceis de serem descobertas;</p>
+    </section>
+        
+    <hr>      
+        
+    <section>
+      <h4>Wi-Fi</h4>
+            
+      <img alt="Imagem de Wifi" src="img/diciplinas/bases_internet/wifi-9-3-PT.png" id="imagem-basesdainternet-wifi"/>
+
+      <p>Wi-Fi (Wireless Fidelity) é um tipo de rede local que utiliza sinais de rádio para comunicação. Possui dois modos básicos de operação:</p>
+
+      <p><strong>Infraestrutura:</strong> Normalmente o mais encontrado, utiliza um concentrador de acesso (Access Point - AP) ou um roteador wireless.</p>
+            
+      <p><strong>Ponto a ponto (ad-hoc):</strong> Permite que um pequeno grupo de máquinas se comunique diretamente, sem a necessidade de um AP.</p>
+            
+      <p>Redes Wi-Fi se tornaram populares pela mobilidade que oferecem e pela facilidade de instalação e de uso em diferentes tipos de ambientes. Embora sejam bastante convenientes, há alguns riscos que você deve considerar ao usá-las, como:</p>
+
+      <p>Por se comunicarem por meio de sinais de rádio, não há a necessidade de acesso físico a um ambiente restrito, como ocorre com as redes cabeadas. Devido a isto, os dados transmitidos por clientes legítimos podem ser interceptados por qualquer pessoa próxima com um mínimo de equipamento (por exemplo, um notebook ou tablet);</p>
+            
+      <p>Por terem instalação bastante simples, muitas pessoas as instalam em casa (ou mesmo em empresas, sem o conhecimento dos administradores de rede), sem qualquer cuidado com configurações mínimas de segurança, e podem vir a ser abusadas por atacantes, por meio de uso não autorizado ou de "sequestro"2;</p>
+            
+      <p>Em uma rede Wi-Fi pública (como as disponibilizadas em aeroportos, hotéis e conferências) os dados que não estiverem criptografados podem ser indevidamente coletados por atacantes;</p>
+            
+      <p>Uma rede Wi-Fi aberta pode ser propositadamente disponibilizada por atacantes para atrair usuários, a fim de interceptar o tráfego (e coletar dados pessoais) ou desviar a navegação para sites falsos.</p>
+            
+      <p>Para resolver alguns destes riscos foram desenvolvidos mecanismos de segurança, como:</p>
+
+      <p>WEP (Wired Equivalent Privacy): primeiro mecanismo de segurança a ser lançado. É considerado frágil e, por isto, o uso deve ser evitado.</p>
+            
+      <p>WPA (Wi-Fi Protected Access): mecanismo desenvolvido para resolver algumas das fragilidades do WEP. É o nível mínimo de segurança que é recomendado.</p>
+            
+      <p>WPA-2: similar ao WPA, mas com criptografia considerada mais forte. É o mecanismo mais recomendado.</p>
+            
+      <p><strong>Cuidados a serem tomados:</strong></p>
+
+      <p>Habilite a interface de rede Wi-Fi do seu computador ou dispositivo móvel somente quando usá-la e desabilite-a após o uso;</p>
+              
+      <p>Desabilite o modo ad-hoc (use-o apenas quando necessário e desligue-o quando não precisar). Alguns equipamentos permitem inibir conexão com redes ad-hoc, utilize essa função caso o dispositivo permita;</p>
+              
+      <p>Use, quando possível, redes que oferecem autenticação e criptografia entre o cliente e o AP (evite conectar-se a redes abertas ou públicas, sem criptografia, especialmente as que você não conhece a origem);</p>
+              
+      <p>Considere o uso de criptografia nas aplicações, como por exemplo, PGP para o envio de e-mails, SSH para conexões remotas ou ainda VPNs;</p>
+              
+      <p>Evite o acesso a serviços que não utilizem conexão segura ("https");</p>
+              
+      <p>Evite usar WEP, pois ele apresenta vulnerabilidades que, quando exploradas, permitem que o mecanismo seja facilmente quebrado;</p>
+              
+      <p>Use WPA2 sempre que disponível (caso seu dispositivo não tenha este recurso, utilize no mínimo WPA).</p>
+      
+    </section>
+        
+    <hr>
+    <section>
+      <h4>Cuidados ao montar uma rede sem fio doméstica:</h4>
+      <img alt="Imagem ilustrativa de um rede" id="imagem-basesdainternet-vps" src="img/diciplinas/bases_internet/chia-se-may-in-vps.gif">
+
+      <p>Posicione o AP longe de janelas e próximo ao centro de sua casa a fim de reduzir a propagação do sinal e controlar a abrangência (conforme a potência da antena do AP e do posicionamento no recinto, sua rede pode abranger uma área muito maior que apenas a da sua residência e, com isto, ser acessada sem o seu conhecimento ou ter o tráfego capturado por vizinhos ou pessoas que estejam nas proximidades);</p>
+              
+      <p>Altere as configurações padrão que acompanham o seu AP. Alguns exemplos são:</p>
+            
+      <p>Altere as senhas originais, tanto de administração do AP como de autenticação de usuários;</p>
+              
+      <p>Assegure-se de utilizar senhas bem elaboradas e difíceis de serem descobertas (mais detalhes no Capítulo Contas e senhas);</p>
+              
+      <p>Altere o SSID (Server Set IDentifier);</p>
+              
+      <p>Ao configurar o SSID procure não usar dados pessoais e nem nomes associados ao fabricante ou modelo, pois isto facilita a identificação de características técnicas do equipamento e pode permitir que essas informações sejam associadas a possíveis vulnerabilidades existentes;</p>
+              
+      <p>Desabilite a difusão (broadcast) do SSID, evitando que o nome da rede seja anunciado para outros dispositivos;</p>
+              
+      <p>Desabilite o gerenciamento do AP via rede sem fio, de tal forma que, para acessar funções de administração, seja necessário conectar-se diretamente a ele usando uma rede cabeada. Desta maneira, um possível atacante externo (via rede sem fio) não será capaz de acessar o AP para promover mudanças na configuração.</p>
+              
+      <p>Não ative WEP, pois ele apresenta vulnerabilidades que, quando exploradas, permitem que o mecanismo seja facilmente quebrado;</p>
+              
+      <p>Utilize WPA2 ou, no mínimo, WPA;</p>
+              
+      <p>Caso seu AP disponibilize WPS (Wi-Fi Protected Setup), desabilite-o a fim de evitar acessos indevidos;</p>
+              
+      <p>Desligue seu AP quando não usar sua rede.</p>
+    </section>
+  </section>
 
     
 
@@ -204,23 +213,6 @@
         <p> Copyright &copy; Impersystem. Todos os direitos reservados. </p>
         Página desenvolvida por <a tabindex="1" href="https://www.linkedin.com/in/rodolfo-baldan-140b8516a/" target="blank">Rodolfo Soares Baldan </a>
     </footer>
-
-
-    <!-- jQuery -->
-    <script type="text/javascript" src="jquery/jquery.js"></script>
-
-    <!-- SmartMenus jQuery plugin -->
-    <script type="text/javascript" src="jquery.smartmenus.js"></script>
-
-    <!-- SmartMenus jQuery init -->
-    <script type="text/javascript">
-      $(function() {
-        $('#main-menu').smartmenus({
-          subMenusSubOffsetX: 1,
-          subMenusSubOffsetY: -8
-        });
-      });
-    </script>
 
 </body>
 </html>
